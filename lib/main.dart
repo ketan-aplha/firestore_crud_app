@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    print('hello');
     return FutureBuilder(
           future: _initialization,
         builder:(context,snapshot){
@@ -30,7 +31,9 @@ class MyApp extends StatelessWidget {
           }
           return CircularProgressIndicator();
         },
+
         );
+
   }
 }
 
